@@ -1,12 +1,23 @@
 using CommunityToolkit.Maui.Alerts;
+using System.Collections.ObjectModel;
 
 namespace MauiApp1.Screens
 {
     public partial class Dashboard : ContentPage
     {
+        public ObservableCollection<string> ClassList { get; set; }
+
         public Dashboard()
         {
             InitializeComponent();
+            ClassList = new ObservableCollection<string>
+            {
+                "class 1",
+                "class 2",
+                "class 3",
+                "class 5B"
+            };
+            BindingContext = this; // Set BindingContext for data binding in XAML
         }
 
         // Mark the method as async to use await inside
