@@ -73,6 +73,9 @@
 	  <MauiXaml Update="Screens\Dashboard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Screens\DisplayCards.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Screens\MediaScreen.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

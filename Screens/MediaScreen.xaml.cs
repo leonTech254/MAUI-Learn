@@ -1,3 +1,4 @@
+
 namespace MauiApp1.Screens;
 
 public partial class MediaScreen : ContentPage
@@ -52,5 +53,10 @@ public partial class MediaScreen : ContentPage
             // Display the image by setting the Source property of the Image control
             myImage.Source = ImageSource.FromFile(localFilePath);
         }
+    }
+    private void GoToListCards(object sender,EventArgs args)
+    {
+
+        Navigation.PushAsync(new DisplayCards());
     }
 }

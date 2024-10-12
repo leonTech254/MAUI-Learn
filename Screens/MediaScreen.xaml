@@ -24,7 +24,14 @@
                 Text="Pick an image"
                 HorizontalOptions="CenterAndExpand"
                 Clicked="PickPhoto"
+                Background="Magenta"
                 />
+            <Button 
+    Text="List Cards"
+    HorizontalOptions="CenterAndExpand"
+    Clicked="GoToListCards"
+    Background="Magenta"
+    />
         </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
