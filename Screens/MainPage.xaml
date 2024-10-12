@@ -29,7 +29,12 @@
                 Text="clic here" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                />
+                HorizontalOptions="Fill" />
+            <Button 
+                Text="Next screen"
+                Clicked="GoToDashboard"
+                HorizontalOptions="Fill"/>
+
         </VerticalStackLayout>
     </ScrollView>
 

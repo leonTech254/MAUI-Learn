@@ -1,4 +1,6 @@
-﻿namespace MauiApp1
+﻿using MauiApp1.Screens;
+
+namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
@@ -20,6 +22,9 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+        private void GoToDashboard(object sender, EventArgs e) => Navigation.PushAsync(new Dashboard());
     }
+
+    
 
 }
