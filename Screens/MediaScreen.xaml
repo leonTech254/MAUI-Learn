@@ -20,6 +20,11 @@
               Text="Pick a picture"
               Clicked="TakePhoto"
               HorizontalOptions="Center" />
+            <Button 
+                Text="Pick an image"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="PickPhoto"
+                />
         </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

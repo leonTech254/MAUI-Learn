@@ -7,6 +7,29 @@ public partial class MediaScreen : ContentPage
         InitializeComponent();
     }
 
+    private async void PickPhoto(object sender, EventArgs e)
+    {
+        // Pick a photo from the gallery
+        FileResult photo = await MediaPicker.Default.PickPhotoAsync();
+
+        if (photo != null)
+        {
+            // Open the selected image file
+            using Stream sourceStream = await photo.OpenReadAsync();
+
+            // Save the image in the local cache directory
+            string localFilePath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+
+            using FileStream fileStream = File.OpenWrite(localFilePath);
+            await sourceStream.CopyToAsync(fileStream);
+            fileStream.Close();
+
+            // Display the selected image on the screen
+            myImage.Source = ImageSource.FromFile(localFilePath);
+        }
+    }
+
+
     private async void TakePhoto(object sender, EventArgs e)
     {
         // Capture a photo
