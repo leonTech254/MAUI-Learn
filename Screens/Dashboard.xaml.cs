@@ -53,5 +53,10 @@ namespace MauiApp1.Screens
                 usernameShow.TextColor = Colors.Green;
             }
         }
+
+        private void PickImageScreen(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new MediaScreen());
+        }
     }
 }

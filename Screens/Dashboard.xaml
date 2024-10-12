@@ -9,7 +9,6 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <StackLayout 
-            Orientation="Vertical"
             Spacing="20"
             Padding="20"
             >
@@ -22,6 +21,8 @@
                   
             <Button Text="submit Form"
                     Clicked="SubmitForm"/>
+            <Button Text="Pick Image"
+                    Clicked="PickImageScreen"/>
             <Label Text="Martin wambugu"
                    x:Name="usernameShow"
                    TextColor="Red"
