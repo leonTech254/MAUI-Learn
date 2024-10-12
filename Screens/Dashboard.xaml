@@ -16,8 +16,16 @@
             <Entry x:Name="username"
                 Placeholder="Enter username"
                    
-            
                   />
+            <Picker x:Name="selectedClass" Title="choose class">
+                <Picker.Items>
+                    <x:String>class 1</x:String>
+                    <x:String>class 2</x:String>
+                    <x:String>class 3</x:String>
+                </Picker.Items>
+       
+            </Picker>
+                  
             <Button Text="submit Form"
                     Clicked="SubmitForm"/>
             <Label Text="Martin wambugu"
@@ -28,6 +36,8 @@
                    FontSize="Header"
                    
                    />
+            
+            
 
         </StackLayout>
     </VerticalStackLayout>
