@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Screens.DisplayCards"
              Title="DisplayCards">
-    <VerticalStackLayout>
+    <ScrollView>
+    <VerticalStackLayout VerticalOptions="FillAndExpand">
         <Label Text="Products" FontSize="24" HorizontalOptions="Center" />
 
         <CollectionView ItemsSource="{Binding Products}">
@@ -18,6 +19,11 @@
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Span="2"  Orientation="Vertical"/>
+                <!-- Adjust the Span to control the number of columns -->
+            </CollectionView.ItemsLayout>
         </CollectionView>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

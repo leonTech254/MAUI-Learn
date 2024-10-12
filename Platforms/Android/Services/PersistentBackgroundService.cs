@@ -40,7 +40,7 @@ namespace MauiApp1.Platforms.Android.Services
             // Start your background task here
             Task.Run(async () => {
                 // Wait for 5 minutes (300,000 milliseconds)
-                await Task.Delay(300000, _cancellationTokenSource.Token);
+                await Task.Delay(60000, _cancellationTokenSource.Token);
 
                 // Send a notification after 5 minutes
                 SendNotification("Persistent Background Service", "The service is still running in the background.");
