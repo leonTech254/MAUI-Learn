@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:md="clr-namespace:MaterialDesign.Maui;assembly=MaterialDesign.Maui"
+             x:Class="MauiApp1.Screens.NavigationDrawer"
+             Title="NavigationDrawer">
+
+    <md:NavigationDrawer Style="{DynamicResource ModalNavigationDrawerStyle}">
+        <Label
+            Padding="20,0,20,20"
+            FontAttributes="Bold"
+            FontSize="18"
+            Text="Title"
+            TextColor="{DynamicResource OnSurfaceVariantColor}" />
+
+        <md:NavigationDrawerItem IconData="{Static icon:Material.Category}" Text="Item 1">
+            <Label
+                FontSize="26"
+                HorizontalOptions="Center"
+                Text="Item 1"
+                VerticalOptions="Center" />
+        </md:NavigationDrawerItem>
+
+        <md:NavigationDrawerItem IconData="{Static icon:Material.Category}" Text="Item 2">
+            <Label
+                FontSize="26"
+                HorizontalOptions="Center"
+                Text="Item 2"
+                VerticalOptions="Center" />
+        </md:NavigationDrawerItem>
+
+        <md:NavigationDrawer.FooterItems>
+            <md:NavigationDrawerItem IconData="{Static icon:Material.Settings}" Text="Settings">
+                <Label
+                    FontSize="26"
+                    HorizontalOptions="Center"
+                    Text="Settings"
+                    VerticalOptions="Center" />
+            </md:NavigationDrawerItem>
+        </md:NavigationDrawer.FooterItems>
+    </md:NavigationDrawer>
+
+</ContentPage>

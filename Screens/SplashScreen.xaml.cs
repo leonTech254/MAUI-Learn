@@ -15,6 +15,6 @@ public partial class SplashScreen : ContentPage
         await Task.Delay(3000);
 
         // Navigate to the main page (DisplayCards in your case)
-        Application.Current.MainPage = new NavigationPage(new Dashboard());
+        Application.Current.MainPage = new NavigationPage(new NavigationDrawer());
     }
 }
